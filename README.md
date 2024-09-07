@@ -25,4 +25,5 @@ This is a simple, responsive web application that allows users to search for pro
 
 1. Clone the repository:
 
-   ```bash https://github.com/adityabaranwal2021/Property-Search-Frontend.git
+   ```bash
+   https://github.com/adityabaranwal2021/Property-Search-Frontend.git
