@@ -1,4 +1,3 @@
-# Property-Search-Frontend
 # Property Search and Rent Offer Website
 
 This is a simple, responsive web application that allows users to search for properties, view detailed information, review rent offers, and onboard as tenants.
