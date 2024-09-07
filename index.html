@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Search Results</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Property Search</h1>
+    <div class="search-sort">
+      <input type="text" id="searchBar" placeholder="Search by location..." oninput="filterProperties()">
+      <select id="sortOptions" onchange="sortProperties()">
+        <option value="rating">Sort by Rating</option>
+        <option value="price">Sort by Price</option>
+      </select>
+    </div>
+  </header>
+
+  <section id="property-list"></section>
+
+  <!-- Property Details Modal -->
+  <div id="propertyModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalType"></p>
+      <p id="modalPrice"></p>
+      <p id="modalRating"></p>
+      <p id="modalLocation"></p>
+      <!-- Button to navigate to Transaction Review -->
+      <a href="transaction-review.html">
+        <button>Proceed to Transaction Review</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Rent Offer Modal -->
+  <div id="rentOfferModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeRentOfferModal()">&times;</span>
+      <h2>Rent Offer</h2>
+      <p>New Rent Offer: ₹20,000/month</p>
+      <p>Zero Security Deposit</p>
+      <button onclick="confirmRentOffer()">Confirm Rent Offer</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

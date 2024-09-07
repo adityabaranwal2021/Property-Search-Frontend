@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction Review</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <!-- Example back button to go back to Transaction Review -->
+<a href="index.html">
+  <button>Back to Home Page</button>
+</a>
+  <section id="transaction-review">
+    <h1>Transaction Review</h1>
+    <div class="property-details">
+      <h2>Sky Dandelions</h2>
+      <p>Location: Sector 28, Gurgaon</p>
+      <p>Rent: ₹22,000/month</p>
+    </div>
+
+    <!-- Rent Offer Section -->
+<div class="rent-offer">
+    <h3>New Rent Offer: ₹20,000/month</h3>
+    <p>Zero Security Deposit Enabled</p>
+    <p>3-Month Salary Cover</p>
+    <a href="tenant-onboarding.html">
+      <button>Proceed to Tenant Onboarding</button>
+    </a>
+  </div>
+
+    <div id="confirmation-modal" class="modal hidden">
+      <h2>Confirm Your Offer</h2>
+      <p>New Rent: ₹20,000/month</p>
+      <p>Zero Security Deposit</p>
+      <button onclick="completeTransaction()">Confirm & Pay</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tenant Onboarding</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Example back button to go back to Transaction Review -->
+<a href="transaction-review.html">
+    <button>Back to Transaction Review</button>
+  </a>
+  <section id="onboarding">
+    <h1>Tenant Onboarding</h1>
+    <div id="step-1" class="step">
+      <h2>Step 1: Basic Details</h2>
+      <input type="text" placeholder="PAN" required>
+      <input type="date" placeholder="Date of Birth" required>
+      <button onclick="nextStep(2)">Next</button>
+    </div>
+
+    <div id="step-2" class="step hidden">
+      <h2>Step 2: Employment Details</h2>
+      <input type="text" placeholder="Employer" required>
+      <input type="text" placeholder="Job Title" required>
+      <button onclick="nextStep(3)">Next</button>
+    </div>
+
+    <div id="step-3" class="step hidden">
+      <h2>Step 3: Identity Verification</h2>
+      <input type="text" placeholder="Aadhaar Number" required>
+      <input type="file" accept="image/*" placeholder="Upload ID">
+      <button onclick="completeOnboarding()">Get Started</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
